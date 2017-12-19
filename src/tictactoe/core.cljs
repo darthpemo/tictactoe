@@ -7,7 +7,7 @@
 ;; define your app data so that it doesn't get over-written on reload
 
 (defn new-board [n]
-  (vec (repeat n :x-square)))
+  (vec (repeat n :o-square)))
 
 (defonce app-state (atom {:text "Tic Tac Toe"
                           :board (new-board 9) }))
